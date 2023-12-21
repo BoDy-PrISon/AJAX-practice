@@ -60,7 +60,8 @@ button{
     color: rgb(0, 0, 0);
     border-radius: 10px;
     border: 0;
-    font-family: "Comic Sans MS";
+    font-family: 'Times New Roman', Times, serif;
+	font-weight: 700;
 }
 .edit-button{
     align-self: center;
@@ -89,9 +90,9 @@ button{
     top: 0;
     right: 0;
     bottom: 0;
-    /* фоновый цвет элемента */
-    background: #e0e0e0;
-    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    background-image: url('.\tmpo4ybphab.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
     z-index: 1001;
   }
   
@@ -104,7 +105,7 @@ button{
     margin-top: -35px;
     margin-left: -35px;
     text-align: center;
-    animation: preloader-rotate 2s infinite linear;
+    animation: preloader-rotate 10s infinite linear;
   }
   
   .preloader__item {
@@ -113,9 +114,9 @@ button{
     top: 0;
     background-color: #337ab7;
     border-radius: 100%;
-    width: 35px;
-    height: 35px;
-    animation: preloader-bounce 2s infinite ease-in-out;
+    width: 50px;
+    height: 50px;
+    animation: preloader-bounce 10s infinite ease-in-out;
   }
   
   .preloader__item:last-child {
@@ -148,5 +149,5 @@ button{
   }
   
   .loaded .preloader {
-    display: none;
+    opacity: 0;
   }
